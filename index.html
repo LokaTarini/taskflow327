@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>TaskFlow</h1>
+    <p>Simple Task Management System</p>
+
+    <input type="text" id="title" placeholder="Task Title">
+
+    <textarea id="description" placeholder="Task Description"></textarea>
+
+    <input type="date" id="dueDate">
+
+    <select id="status">
+        <option value="Todo">Todo</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Done">Done</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+
+    <h2>Task List</h2>
+
+    <div id="taskList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
