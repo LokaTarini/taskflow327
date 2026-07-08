@@ -1,40 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaskFlow</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TaskFlow</h1>
+      <p>Simple Task Management System</p>
+      <p>Manage your daily tasks efficiently and stay organized.</p>
+      <p>All created tasks are displayed below.</p>
+      <input type="text" id="title" placeholder="Task Title" />
 
-<div class="container">
+      <textarea id="description" placeholder="Task Description"></textarea>
 
-    <h1>TaskFlow</h1>
-    <p>Simple Task Management System</p>
-    <p>Manage your daily tasks efficiently and stay organized.</p>
-    <p>All created tasks are displayed below.</p>
-    <input type="text" id="title" placeholder="Task Title">
+      <input type="date" id="dueDate" />
 
-    <textarea id="description" placeholder="Task Description"></textarea>
-
-    <input type="date" id="dueDate">
-
-    <select id="status">
+      <select id="status">
         <option value="Todo">Todo</option>
         <option value="In Progress">In Progress</option>
         <option value="Done">Done</option>
-    </select>
+      </select>
 
-    <button onclick="addTask()">Add Task</button>
+      <button onclick="addTask()">Add Task</button>
 
-    <h2>Task List</h2>
+      <h2>Task List</h2>
 
-    <div id="taskList"></div>
+      <div id="taskList"></div>
+    </div>
 
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
